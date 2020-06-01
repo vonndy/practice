@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+        <script src = "functions.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            @import url("styles.css");
+        </style>
+        <title>Информационный ресурс</title>
+    </head>
+    <body onload="load();">
+    <h1>Информационный ресурс</h1>
+        <div id="status"></div>
+        <div id="links"></div>
+        <div id="info"></div>
+        <div id="news"></div>
+        <h2>Добавление текста в таблицу</h2>
+        <p><textarea rows="2" cols="45" id="text"></textarea></p> 
+        <input type='button' class = "button" value='Добавить' onclick='add();'>
+        <h2>Рассылка</h2>
+        <p>Введите адреса через запятую:</p>
+        <p><textarea rows="2" cols="45" id="bcc"></textarea></p>  
+        <p>Введите тему письма:</p>
+        <input type='text' id='subject' size='45'><br>
+        <p>Введите текст письма:</p>
+        <p><textarea rows="10" cols="45" id="body"></textarea></p>
+        <input type='button' class = "button" value='Отправить' onclick='send();'>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src = "functions.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            @import url("styles.css");
+        </style>
+            <title>Новости</title>
+    </head>
+    <body>
+        <h1>Информационный ресурс</h1>
+        <div id = "news"></div>
+        <script>
+            var res = JSON.parse(sessionStorage.getItem("result"));
+            fileOutput(res, "news", "news", "<h2>Новости</h2>");
+        </script>
+        <a href = 'myproject.html'>Вернуться назад</a>
+    </body>
+</html>
